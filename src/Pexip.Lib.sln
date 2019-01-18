@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28306.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pexip.Lib", "Pexip.Lib\Pexip.Lib.csproj", "{AEB0125C-BD19-415F-9BC0-C7001FCE078E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pexip.Lib.Tests", "Pexip.Lib.Tests\Pexip.Lib.Tests.csproj", "{CB73554E-541B-466C-B9DC-DB230362761C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEB0125C-BD19-415F-9BC0-C7001FCE078E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB0125C-BD19-415F-9BC0-C7001FCE078E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB0125C-BD19-415F-9BC0-C7001FCE078E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB0125C-BD19-415F-9BC0-C7001FCE078E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB73554E-541B-466C-B9DC-DB230362761C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB73554E-541B-466C-B9DC-DB230362761C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB73554E-541B-466C-B9DC-DB230362761C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB73554E-541B-466C-B9DC-DB230362761C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BA46506-2F47-46F4-85EA-2DE16AC31DCC}
+	EndGlobalSection
+EndGlobal
