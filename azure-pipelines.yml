@@ -1,0 +1,42 @@
+# .NET Desktop
+# Build and run tests for .NET Desktop or Windows classic desktop solutions.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
+
+trigger:
+- master
+
+pool:
+  vmImage: 'VS2017-Win2016'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+# Install .Net Core SDK
+- task: DotNetCoreInstaller@0
+  inputs:
+    version: 2.2.103
+
+- task: NuGetToolInstaller@0
+  inputs:
+    versionSpec: 4.4.1
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+# Run .Net Core Tests Project
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: '**\Pexip.Lib.Tests\*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
