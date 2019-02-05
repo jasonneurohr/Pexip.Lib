@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Pexip.Lib</id>
+    <version>$version$</version>
+    <title>Pexip.Lib</title>
+    <authors>Jason Neurohr</authors>
+    <owners>Jason Neurohr</owners>
+    <license type="expression">Apache-2.0</license>
+    <projectUrl>https://github.com/jasonneurohr/Pexip.Lib</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A .Net Standard 2.0 library for Pexip Infinity.</description>
+    <copyright>Copyright 2019</copyright>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="12.0.1" />
+    </dependencies>
+  </metadata>
+</package>
